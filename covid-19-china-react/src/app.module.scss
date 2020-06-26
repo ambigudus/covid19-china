@@ -1,0 +1,113 @@
+.container {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.h1 {
+  font-weight: 600;
+  margin: 0;
+
+  .text {
+    font-size: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+  }
+}
+
+.headerInfo {
+  margin-top: 0px;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.goCorona {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-top: 0px;
+
+  font-weight: 400;
+}
+
+.headerContainer {
+  display: flex;
+  margin: 2rem 0;
+  flex-direction: column;
+
+  .img {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block;
+    margin-top: -0.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    animation: spin 4s linear infinite;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.statsMapContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentHeader {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 0.6rem;
+  margin-top: 1.2rem;
+
+  h4 {
+    padding-right: 1rem;
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .selection {
+    display: flex;
+    align-items: center;
+    * {
+      cursor: pointer !important;
+      user-select: none;
+    }
+  }
+}
+
+.extraSelection {
+  display: flex;
+  margin: 10px 0;
+  span {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .selection {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    justify-content: center;
+
+    input {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+}

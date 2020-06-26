@@ -1,0 +1,72 @@
+.table {
+  width: 100%;
+  min-width: 690px;
+
+  th {
+    // position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #dcdde1;
+    padding: 0rem 4px;
+  }
+
+  .thContainer {
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .statDate {
+    font-size: 0.85rem;
+    font-weight: 400;
+    flex: 1 1;
+    height: 100%;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 4px;
+    padding-right: 2px;
+    opacity: 0.75;
+  }
+
+  td {
+    border-bottom: 1px solid #eee;
+  }
+
+  td {
+    padding: 0.4rem 4px;
+  }
+
+  .rightAlign {
+    text-align: right;
+  }
+
+  .leftAlign {
+    text-align: left;
+  }
+
+  tr:hover {
+    background: #f4f4f4;
+  }
+}
+
+.diffData {
+  margin-right: 10px;
+
+  font-size: 0.9rem;
+}
+
+.diffDataPositive {
+  color: #c0392b;
+}
+
+.diffDataNegetive {
+  color: #27ae60;
+}
+
+.sorter {
+  display: inline-block;
+  margin: 0 4px;
+  width: 10px;
+}
