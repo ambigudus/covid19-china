@@ -11,24 +11,24 @@ import classes from './stateTable.module.scss';
 
 const columns = [
   {
-    Header: 'State',
+    Header: '省份',
     accessor: 'stateName',
   },
   {
-    Header: 'Confirmed',
+    Header: '累计',
     accessor: 'confirmed',
     sortType: 'basic',
     Cell: (props) => <TableDiffCell {...props} formator={formatNumber} />,
   },
   {
-    Header: 'Active',
+    Header: '现存',
     id: 'active',
     sortType: 'basic',
     accessor: calculateActiveCase,
     Cell: (props) => <TableDiffCell {...props} formator={formatNumber} />,
   },
   {
-    Header: 'Recovered',
+    Header: '治愈',
     accessor: 'recovered',
     sortType: 'basic',
     Cell: (props) => (
@@ -36,20 +36,20 @@ const columns = [
     ),
   },
   {
-    Header: 'Death',
+    Header: '死亡',
     accessor: 'death',
     sortType: 'basic',
     Cell: (props) => <TableDiffCell {...props} formator={formatNumber} />,
   },
   {
-    Header: 'Death Rate',
+    Header: '死亡率',
     id: 'mortalityRate',
     sortType: 'basic',
     accessor: calculateMortalityRate,
     Cell: (props) => formatNumber(props.value, 2) + '%',
   },
   {
-    Header: 'Recovered Rate',
+    Header: '治愈率',
     id: 'recoveredRate',
     sortType: 'basic',
     accessor: calculateRecoveredRate,

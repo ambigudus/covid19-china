@@ -279,7 +279,7 @@ const TooltipContent = (props) => {
       <div className={classes.stateName}>{stateName}</div>
       <div className={classes.dataContainer}>
         <div className={classes.data}>
-          <span className={classes.key}>Confirmed</span>
+          <span className={classes.key}>累计</span>
           <span>:</span>
           <span className={classes.value}>{confirmed ?? 0}</span>
           {!!inc.confirmed && (
@@ -297,7 +297,7 @@ const TooltipContent = (props) => {
         </div>
 
         <div className={classes.data}>
-          <span className={classes.key}>Active</span>
+          <span className={classes.key}>现存</span>
           <span>:</span>
           <span className={classes.value}>
             {calculateActiveCase(props.data) ?? 0}
@@ -317,7 +317,7 @@ const TooltipContent = (props) => {
         </div>
 
         <div className={classes.data}>
-          <span className={classes.key}>Recovered</span>
+          <span className={classes.key}>治愈</span>
           <span>:</span>
           <span className={classes.value}>{recovered ?? 0}</span>
 
@@ -336,7 +336,7 @@ const TooltipContent = (props) => {
         </div>
 
         <div className={classes.data}>
-          <span className={classes.key}>Death</span>
+          <span className={classes.key}>死亡</span>
           <span>:</span>
           <span className={classes.value}>{death ?? 0}</span>
           {!!inc.death && (
@@ -355,11 +355,11 @@ const TooltipContent = (props) => {
       </div>
       <div className={classes.footer}>
         <span>
-          Death Rate :{' '}
+          死亡率 :{' '}
           {formatNumber(calculateMortalityRate(props.data) || 0, 2)}%
         </span>
         <span>
-          Recovered Rate :{' '}
+          治愈率 :{' '}
           {formatNumber(calculateRecoveredRate(props.data) || 0, 2)}%
         </span>
       </div>

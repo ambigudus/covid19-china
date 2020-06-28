@@ -47,20 +47,15 @@ function App() {
             <div className={classes.img}>
               <img alt="O" src="favicon.ico" />
             </div>
-            <span>VID-19 China | 中国新冠肺炎实时数据</span>
+            <span>VID-19 China</span>
           </span>
-{/*          <span className={classes.goCorona}>
-            (
-            <a
-              style={{ color: 'inherit' }}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/hashtag/GoCorona"
-            >
-              #goCorona
-            </a>
-            😷)
-          </span>*/}
+
+        </div>
+        <div className={classes.h1}>
+          <span className={classes.text}>
+            <span>中国新冠肺炎实时数据</span>
+          </span>
+
         </div>
         <span className={classes.headerInfo}>
           Refined stats from COVID-19{' '}
@@ -78,7 +73,7 @@ function App() {
       <StatCards isLoading={isLoading} statDate={statDate} data={lastetData} />
       <div>
         <div className={classes.contentHeader}>
-          <h4>Province Stats</h4>
+          <h4>省份数据</h4>
           <div className={classes.selection}>
             <input
               type="checkbox"
@@ -88,7 +83,7 @@ function App() {
               value={isTableView}
               onChange={() => setIsTableView((v) => !v)}
             />
-            <label htmlFor="tableView"> Table View</label>
+            <label htmlFor="tableView"> 查看列表</label>
           </div>
         </div>
 
@@ -101,7 +96,7 @@ function App() {
                 alignItems: 'center',
               }}
             >
-              <span>Density : </span>
+              <span>密度 : </span>
               {densityKeysSchema.map((key) => {
                 return (
                   <span className={classes.selection} key={key.key}>
