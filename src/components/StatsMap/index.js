@@ -21,7 +21,7 @@ import { useLocalStorage } from '../../hooks/useLocalstorage';
 import { densityKeysSchema } from '../../utils/helper';
 
 let GEO_CHINA_JSON_CACHE;
-let GEO_CHINA_JSON_PATH = '/china.json';
+let GEO_CHINA_JSON_PATH = '%PUBLIC_URL%/china.json';
 
 const initalTooltipState = {
   show: false,
