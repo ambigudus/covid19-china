@@ -54,7 +54,7 @@ const StatCards = (props) => {
       <StatCard
         isLoading={props.isLoading}
         bgColor="#e74c3c"
-        title="累计"
+        title="累计CONFIRMED"
         inc={data.confirmedInc}
         stat={data.confirmed}
         date={props.statDate}
@@ -62,7 +62,7 @@ const StatCards = (props) => {
       <StatCard
         isLoading={props.isLoading}
         bgColor="#2980b9"
-        title="现存"
+        title="现存ACTIVE"
         inc={data.activeInc}
         stat={data.active}
         percent={data.confirmed ? (data.active / data.confirmed) * 100 : 0}
@@ -70,7 +70,7 @@ const StatCards = (props) => {
       <StatCard
         isLoading={props.isLoading}
         bgColor="#27ae60"
-        title="治愈"
+        title="治愈RECOVERED"
         inc={data.recoveredInc}
         stat={data.recovered}
         percent={data.confirmed ? (data.recovered / data.confirmed) * 100 : 0}
@@ -78,7 +78,7 @@ const StatCards = (props) => {
       <StatCard
         isLoading={props.isLoading}
         bgColor="#2c3e50"
-        title="死亡"
+        title="死亡DEATH"
         percent={data.confirmed ? (data.death / data.confirmed) * 100 : 0}
         inc={data.deathInc}
         stat={data.death}

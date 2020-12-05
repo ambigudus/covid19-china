@@ -7,29 +7,29 @@ import {
 export const densityKeysSchema = [
   {
     key: 'confirmed',
-    title: '累计',
+    title: '累计Confirmed',
   },
   {
     key: 'active',
-    title: '现存',
+    title: '现存Active',
     dataModifier: (data) => (data.active = calculateActiveCase(data)),
   },
   {
     key: 'recovered',
-    title: '治愈',
+    title: '治愈recovered',
   },
   {
     key: 'death',
-    title: '死亡',
+    title: '死亡Death',
   },
   {
     key: 'recoveredRate',
-    title: '治愈率',
+    title: '治愈率RecoveredRate',
     dataModifier: (data) => (data.recoveredRate = calculateRecoveredRate(data)),
   },
   {
     key: 'mortalityRate',
-    title: '死亡率',
+    title: '死亡率DeathRate',
     dataModifier: (data) => (data.mortalityRate = calculateMortalityRate(data)),
   },
 ];

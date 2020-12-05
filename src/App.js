@@ -96,7 +96,7 @@ function App() {
                 alignItems: 'center',
               }}
             >
-              <span>密度 : </span>
+              <span>密度Density : </span>
               {densityKeysSchema.map((key) => {
                 return (
                   <span className={classes.selection} key={key.key}>
