@@ -16,7 +16,7 @@ export const densityKeysSchema = [
   },
   {
     key: 'recovered',
-    title: '治愈recovered',
+    title: '治愈Recovered',
   },
   {
     key: 'death',
